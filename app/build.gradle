@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.imadev.plantindentifier"
-        minSdk 21
+        minSdk 23
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -65,5 +65,8 @@ dependencies {
     kapt "com.google.dagger:hilt-compiler:2.38.1"
     //logging-interceptor
     implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2'
+
+    //Encrypted shared prefs
+    implementation "androidx.security:security-crypto:1.1.0-alpha04"
 
 }

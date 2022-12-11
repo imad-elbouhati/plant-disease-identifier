@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.auth.register.SignUpFragment">
-
+    tools:context=".ui.auth.login.LoginFragment">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/top_guideline"
@@ -31,11 +30,11 @@
 
 
     <TextView
-        android:id="@+id/sign_up_tv"
+        android:id="@+id/sign_in_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/dmsans_bold"
-        android:text="@string/sign_up"
+        android:text="@string/login"
         android:textColor="@color/black"
         android:textSize="28sp"
         app:layout_constraintLeft_toLeftOf="@+id/left_guideline"
@@ -52,7 +51,7 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintLeft_toRightOf="@+id/left_guideline"
-        app:layout_constraintTop_toBottomOf="@+id/sign_up_tv" />
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_tv" />
 
     <EditText
         android:id="@+id/email_et"
@@ -94,46 +93,21 @@
         app:layout_constraintRight_toLeftOf="@+id/right_guideline"
         app:layout_constraintTop_toBottomOf="@+id/enter_password_tv" />
 
-    <TextView
-        android:id="@+id/re_enter_password_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/dmsans_bold"
-        android:text="@string/re_enter_password"
-        android:textColor="@color/black"
-
-        android:textSize="16sp"
-        app:layout_constraintLeft_toRightOf="@+id/left_guideline"
-        app:layout_constraintTop_toBottomOf="@+id/password_et" />
-
-    <EditText
-        android:id="@+id/re_enter_password_et"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/rounded_edit_text"
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        android:padding="8dp"
-        app:layout_constraintLeft_toRightOf="@+id/left_guideline"
-        app:layout_constraintRight_toLeftOf="@+id/right_guideline"
-        app:layout_constraintTop_toBottomOf="@+id/re_enter_password_tv" />
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/sign_up_btn"
+        android:id="@+id/sign_in_btn"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginTop="28dp"
         android:background="@drawable/rounded_button"
         android:fontFamily="@font/dmsans_bold"
-        android:text="@string/sign_up"
+        android:text="@string/login"
         android:textAllCaps="false"
         android:textColor="@color/black"
         app:layout_constraintLeft_toLeftOf="@+id/left_guideline"
         app:layout_constraintRight_toLeftOf="@+id/right_guideline"
-        app:layout_constraintTop_toBottomOf="@+id/re_enter_password_et" />
+        app:layout_constraintTop_toBottomOf="@+id/password_et" />
 
 
     <LinearLayout
@@ -146,7 +120,7 @@
         android:weightSum="3"
         app:layout_constraintLeft_toLeftOf="@+id/left_guideline"
         app:layout_constraintRight_toRightOf="@+id/right_guideline"
-        app:layout_constraintTop_toBottomOf="@+id/sign_up_btn">
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_btn">
 
         <View
             android:layout_width="0dp"
@@ -176,7 +150,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:fontFamily="@font/dmsans_bold"
-        android:text="@string/sign_up_with"
+        android:text="@string/login_with"
         android:textColor="@color/black"
         app:layout_constraintLeft_toLeftOf="@+id/left_guideline"
         app:layout_constraintRight_toRightOf="@+id/right_guideline"
@@ -239,15 +213,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/dmsans_bold"
-            android:text="@string/already_have_an_account"
+            android:text="@string/don_t_have_an_account"
             android:textColor="@color/black" />
 
         <TextView
-            android:id="@+id/sign_in_tv"
+            android:id="@+id/sign_up_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/dmsans_bold"
-            android:text="@string/sign_in"
+            android:text="@string/sign_up"
             android:textColor="@color/green_app" />
 
     </LinearLayout>
@@ -259,6 +233,5 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent=".95" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.imadev.plantindentifier.remote.models
+package com.imadev.plantindentifier.data.remote.models
 
 data class RegisterModel(
     val name: String,
