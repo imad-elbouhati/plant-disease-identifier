@@ -6,4 +6,8 @@ object Constants {
     const val ENCRYPTED_SHARED_PREF_NAME = "ENCRYPTED_SHARED_PREF_NAME"
 
     const val TOKEN_PREF = "TOKEN_PREF"
+
+    const val REQUEST_GALLERY = 22
+
+    const val REQUEST_CAMERA = 23
 }

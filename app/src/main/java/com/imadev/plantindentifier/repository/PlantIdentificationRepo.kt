@@ -16,4 +16,8 @@ class PlantIdentificationRepo @Inject constructor(
     fun login(loginModel: LoginModel) = safeApiCall {
         plantIdentificationService.login(loginModel)
     }
+
+    fun predict(imageUrl: String) = safeApiCall {
+        plantIdentificationService.predict(imageUrl)
+    }
 }

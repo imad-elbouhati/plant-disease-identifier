@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "460691811662",
+    "project_id": "plant-identification-f7ca8",
+    "storage_bucket": "plant-identification-f7ca8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460691811662:android:43f4485bcb50cf1243021f",
+        "android_client_info": {
+          "package_name": "com.imadev.plantindentifier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460691811662-tl3ktlfn44uk6nkhdjh35d43ogn1otjp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrP0ioQ0P3n6103YOYIKBS4aSCmcKGgSA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460691811662-tl3ktlfn44uk6nkhdjh35d43ogn1otjp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
